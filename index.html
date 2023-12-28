@@ -2,49 +2,53 @@
 <html lang="es" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="SLA Generator - Wave 25 v1.0">
-    <title>SLA Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Email Template Generator - Wave 25 v1.2">
+    <meta name="keywords" content="email,office,support">
+    <title>Email Template Generator</title>
     <link rel="stylesheet" href="./bootstrapt.min.css">
     <script src="./jquery.min.js"></script>
 </head>
 <body>
 
     <div class="container my-4">
-        <h1 class="text-primary text-center">SLA Generator - Wave 25</h1>
 
-        <form id="slaForm">
-            <div class="mb-3">
+        <h1 class="text-primary text-center">Email Template Generator - Wave 25</h1>
+
+        <form id="slaForm" class="row">
+            <div class="mb-3 col-6">
+                <label for="cssSupport" class="form-label">Mi Nombre</label>
+                <input type="text" name="cssSupport" id="cssSupport" class="form-control" placeholder="Escribe tu nomnbre papu" required>
+            </div>
+            <div class="mb-3 col-6">
                 <label for="cssFstN" class="form-label">Nombre del Cliente:</label>
                 <input type="text" class="form-control" name="cssFstN" id="cssFstN" required>
             </div>
-            <div class="mb-3">
+            <div class="mb-3 col-6">
                 <label for="cssCaseNo" class="form-label">Caso #:</label>
                 <input type="text" class="form-control" name="cssCaseNo" id="cssCaseNo" required>
             </div>
-            <div class="mb-3">
+            <div class="mb-3 col-6">
                 <label for="cssTel" class="form-label">Teléfono del Cliente:</label>
                 <input type="tel" class="form-control" name="cssTel" id="cssTel" required>
             </div>
-            <div class="row">
-                <div class="mb-3 col-6">
-                    <label for="cssTime" class="form-label">Hora:</label>
-                    <input type="time" class="form-control" name="cssTime" id="cssTime" required>
-                </div>
-                <div class="mb-3 col-6">
-                    <label for="opSLA" class="form-label">Seleccione el template:</label>
-                    <select class="form-select" name="opSLA" id="opSLA">
-                        <option value="1" selected>Initial SLA</option>
-                        <option value="2">No Responsive</option>
-                        <option value="3">Strike 1</option>
-                        <option value="4">Strike 2</option>
-                        <option value="5">Strike 3</option>
-                    </select>
-                </div>
+            <div class="mb-3 col-6">
+                <label for="cssTime" class="form-label">Hora:</label>
+                <input type="time" class="form-control" name="cssTime" id="cssTime" required>
             </div>
-            
+            <div class="mb-3 col-6">
+                <label for="opSLA" class="form-label">Seleccione el template:</label>
+                <select class="form-select" name="opSLA" id="opSLA">
+                    <option value="1" selected>Initial SLA</option>
+                    <option value="2">No Responsive</option>
+                    <option value="3">Strike 1</option>
+                    <option value="4">Strike 2</option>
+                    <option value="5">Strike 3</option>
+                </select>
+            </div>
             <div class="mb-2">
-                <button type="submit" class="btn btn-success" id="genBTN">Generar el Template</button>
+                <button type="submit" class="btn btn-success float-end" id="genBTN">Generar el Template</button>
+                <button type="button" class="btn btn-danger float-end me-2" onclick="window.location.reload()">Limpiar</button>
             </div>
         </form>
 
@@ -66,8 +70,35 @@
         </div>
     </div>
 
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="1500">
+            <div class="toast-header bg-info-subtle">
+                <i class="rounded me-2 badge bg-primary">i</i>
+                <strong class="me-auto">Informacion</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body text-primary-emphasis bg-primary-subtle">
+                El template se ha copiado al portapapeles.
+            </div>
+        </div>
+    </div>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center mx-1">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <i class="bg-primary-subtle badge round-5">PowerShellazo</i>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023 Wave 25 - Trainer: Camilo Martinez</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex mx-1">
+          <li class="ms-3">Desarrollado Por: Octavio Morales</li>
+        </ul>
+      </footer>
+
     <script type="text/javascript">
         function generarTemplate(number) {
+            const me = document.getElementById('cssSupport');
             const name = document.getElementById('cssFstN');
             const nocaso = document.getElementById('cssCaseNo');
             const tel = document.getElementById('cssTel');
@@ -77,7 +108,7 @@
                 text = `
                         <p>Estimado(a) ${name.value},</p>
                         <p>¡Muchas gracias por contactar al soporte de Microsoft 365!</p>
-                        <p>Mi nombre es {{CAMBIAR NOMBRE}} y soy el ingeniero encargado de esta solicitud, bajo el número  #${nocaso.value}.</p>
+                        <p>Mi nombre es ${me.value} y soy el ingeniero encargado de esta solicitud, bajo el número  #${nocaso.value}.</p>
                         <p>El motivo de este correo es notificarte que tu solicitud está siendo atendida y te estaré contactando en un tiempo promedio de 2-4 horas al número telefónico ${tel.value}, registrado en tu perfil. Si prefieres que nos comuniquemos a un número distinto, por favor indícanos tu teléfono de contacto preferido.</p>
                         <p>Quedo a tu disposición por esta vía en caso de cualquier consulta o novedad relacionada con el ticket.<p>
                         <p>Saludos cordiales,</p>
@@ -141,11 +172,12 @@
 
         function copiarTemplate(){
             let range = document.createRange();
+            const toastAviso = bootstrap.Toast.getOrCreateInstance(document.getElementById('liveToast'));
             range.selectNode(document.getElementById('modalBody'));
             window.getSelection().removeAllRanges();
             window.getSelection().addRange(range);
             document.execCommand('copy');
-            alert("Template Copiado al Portapapeles.");
+            toastAviso.show();
             window.getSelection().removeAllRanges();
         }
     </script>
