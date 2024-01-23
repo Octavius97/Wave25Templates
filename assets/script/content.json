@@ -1,0 +1,51 @@
+{
+    "esp":{
+        "sla":{
+            "text": "<p>Estimado <span id='cfn'></span>,<p>¡Muchas gracias por contactar al soporte de Microsoft 365!</p><p>El motivo de este correo es notificarte que tu solicitud está siendo atendida bajo el número <span id='tn'></span> y te estaremos contactando en un tiempo promedio de 2-4 horas laborales al número telefónico <span id='ccn'></span>, registrado en tu perfil. Si prefieres que nos comuniquemos a un número distinto, por favor indícanos tu teléfono de contacto preferido.</p><p>Estamos a tu disposición por esta vía en caso de cualquier consulta o novedad relacionada con el ticket.</p><p>Saludos cordiales,<p>"
+        },
+        "ifc":{
+            "text": "<p>Estimado <span id='cfn'></span>,</p><p>¡Muchas gracias por contactar al soporte de Microsoft 365!</p><p>Me encuentro intentando contactarle ahora mismo <span id='time'></span> UTC-6 al número de teléfono <span id='cn'></span> registrado en su perfil con la intención de dar seguimiento a su solicitud, pero no he obtenido respuesta.</p><p>Por favor, puede responder a este correo confirmando su número de contacto y horario de disponibilidad (fecha y hora) para intentar comunicarme nuevamente en una ventana de tiempo conveniente para ti.</p><p>Mi objetivo es resolver este incidente tan pronto como sea posible. En caso de no recibir respuesta de su parte, volveré a intentar contactarle en el siguiente día hábil. Luego de 3 intentos fallidos procederé a archivar el ticket. El mismo puede ser reabierto desde el portal de Microsoft 365 dentro de los 7 días posteriores al cierre o puedes enviarme un correo para que se retome el caso.</p><p>Saludos cordiales,</p>"
+        },
+        "str1":{
+            "text": "<p>Estimado <span id='cfn'></span>,</p><p>¡Muchas gracias por contactar al soporte de Microsoft 365!</p><p>Me encuentro intentando contactarle ahora mismo <span id='time'></span> UTC-6 al número de teléfono <span id='cn'></span> registrado en su perfil con la intención de dar seguimiento a su solicitud, pero no he obtenido respuesta.</p><p>Por favor, puede responder a este correo confirmando su número de contacto y horario de disponibilidad (fecha y hora) para intentar comunicarme nuevamente en una ventana de tiempo conveniente para ti.</p>Mi objetivo es resolver este incidente tan pronto como sea posible. En caso de no recibir respuesta de su parte, volveré a intentar contactarle en el siguiente día hábil. Luego de 3 intentos fallidos procederé a archivar el ticket. El mismo puede ser reabierto desde el portal de Microsoft 365.</p><p>Saludos cordiales,</p>"
+        },
+        "str2":{
+            "text": "<p>Estimado<span id='cfn'></span>,</p><p>¡Muchas gracias por contactar al soporte de Microsoft 365!</p><p>He intentado contactarle ahora mismo <span id='time'></span> UTC-6 al número de teléfono <span id='cn'></span> con intención de dar seguimiento a tu incidente, pero no he tenido respuesta.</p><p>Recuerda que puedes responderme por esta vía para indicarme tu número de contacto y el mejor momento para llamarte y que juntos trabajemos en la resolución de su solicitud.</p><p>Si no recibo noticias de tu parte, probaré nuevamente el próximo día hábil. Tu cooperación y disponibilidad son clave para la pronta resolución del caso. Estaré pendiente ante cualquier respuesta o notificación de su parte.</p><p>Saludos cordiales,</p>"
+        },
+        "str3":{
+            "text": "<p>Estimado <span id='cfn'></span>,</p><p>¡Muchas gracias por contactar al soporte de Microsoft 365!</p><p>A pesar de nuestros esfuerzos en darle seguimiento a su solicitud, no hemos logrado contactarle ahora mismo <span id='time'></span> UTC-6 al número <span id='cn'></span> registrado en el perfil del ticket. Con mucho gusto puedes indicarme por esta vía si existe una hora más conveniente en la cual pueda comunicarme contigo y haré lo posible para adaptarme a tu disponibilidad.</p><p>Comprendemos que tienes otros compromisos que demandan de tu atención y disponibilidad, pero si no logramos contactarnos luego del próximo intento, el caso será archivado. Quedo atendo por esta vía ante cualquier respuesta o notificación de su parte.</p><p>Saludos cordiales,</p>"
+        },
+        "unr":{
+            "text": "<p>Estimado <span id='cfn'></span>,</p><p>¡Muchas gracias por contactar al soporte de Microsoft 365!</p><p>Hemos intentado darle continuidad al ticket <span id='tn'></span>, al contactar al número de teléfono <span id='cn'></span> registrado en el perfil del ticket; sin embargo, no pudimos comunicarnos contigo.</p><p>Entiendo que tienes otros compromisos y responsabilidades que atender por lo cual estaré archivando el caso al final del día de hoy. Si aún necesitas asistencia y te encuentras disponible para trabajar conmigo, por favor házmelo saber respondiendo a este mismo mensaje de correo electrónico o reabriendo el ticket desde el portal de Microsoft 365.</p><p>Nuevamente le agradezco mucho por su tiempo y comprensión.</p><p>Saludos cordiales,</p>"
+        },
+        "clos":{
+            "text": "<p>Estimado <span id='cfn'></span>,</p><p>¡Muchas gracias por contactar al soporte de Microsoft 365!</p><p>Gracias por tu tiempo y colaboración. Voy a proceder al archivado de esta solicitud de servicio <span id='tn'></span>. Si surgiese algún problema adicional relacionado con este caso, puedes solicitar la reapertura del mismo.</p><p>Tus comentarios son importantes para nosotros. Aparecerá una opción de solicitud de comentarios en el caso en el Centro de Administración M365 con la oportunidad de contarnos su experiencia. Visita el siguiente vínculo para contarnos tu experiencia: https://portal.office.com/support/support.aspx</p><p>A continuación, incluyo un resumen de la incidencia:</p><p>    • Síntoma:</p><p>    • Causa:</p><p>    • Solución:</p><p>    • Información adicional:</p>Saludos cordiales,</p>"
+        }
+    },
+    "eng":{
+        "sla_e":{
+            "text": "<p>Dear <span id='cfn'></span,</p><p>Thank you very much for contacting Microsoft 365 support. My name is <span id='ambassador'></span> who will be working with you on this case. You may reach me using the contact information listed below, referencing the SR number <span id='tn'></span><p><p>Note: Please note that according to Microsoft Policy, each support incident can only address one problem.</p><p>I understand that you would like to receive assistance with <span id='scope'></span>. Is that correct?</p><p>We value your satisfaction above all, and we are striving to resolve this request in the shortest and most effective way possible. I have verified that you have selected Email modality for this case, however if you would like to engage on a phone call, let me know your availability to schedule a call.</p><p>For now, to properly address your request, would you be so kind to share the following information:</p><p><span id='pq'></span></p><p><span id='ts'></span></p><p>Upon resolving your issue, we will be performing a quick closing call to wrap up the case and make sure everything is in order. We would appreciate it if you could take two minutes to provide your feedback through our automated phone system as this will help us enhance our services.</p><p>I’ll be looking forward to your response.</p><p>Best regards,</p>"
+        },
+        "sla_ph":{
+            "text": ""
+        }
+        "ifc":{
+            "text": ""
+        },
+        "str1":{
+            "text": ""
+        },
+        "str2":{
+            "text": ""
+        },
+        "str3":{
+            "text": ""
+        },
+        "unr":{
+            "text": ""
+        },
+        "clos":{
+            "text": ""
+        }
+    }
+}
